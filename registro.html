@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet"  href="styleregistro.css">   
+</head>
+<body>
+    <style>
+        label, input {
+          display: block;
+          margin-bottom: 10px;
+        }
+      </style>
+
+<style>
+    h1 {
+      text-align: center;
+    }
+    
+    form {
+      margin: auto;
+      max-width: 200px;
+    }
+  </style>
+  
+  <h1>Formulario de Registro</h1>
+  
+  <form action="procesar_registro.php" method="POST">
+    <!-- Campos del formulario aquí -->
+    <label for="usuario">Nombre de usuario:</label>
+    <input type="text" id="usuario" name="usuario" required>
+  
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+  
+    <label for="contraseña">Contraseña:</label>
+    <input type="password" id="contraseña" name="contraseña" required>
+  
+    <label for="marca">Marca del vehículo:</label>
+    <input type="text" id="marca" name="marca" required>
+  
+    <label for="año">Año del vehículo:</label>
+    <input type="number" id="año" name="año" required>
+  
+    <label for="gasolina">Tipo de gasolina:</label>
+    <select id="gasolina" name="gasolina">
+      <option value="regular">Regular</option>
+      <option value="premium">Premium</option>
+      <option value="diesel">Diesel</option>
+    </select>
+    <br>    
+    <br>
+        <button type="submit">Registrarse</button>
+  </form>
+</body>
+</html>
