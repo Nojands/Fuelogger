@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleactividades.css">
+    
+</head>
+<script>
+    window.onload = function() {
+      var fechaActual = new Date();
+      var dia = fechaActual.getDate();
+      var mes = fechaActual.getMonth() + 1;
+      var anio = fechaActual.getFullYear();
+      var fecha = dia + '-' + mes + '-' + anio;
+      document.getElementById('dia').value = fecha;
+    };
+  </script>
+  
+<body>
+    <h1>Bienvenido, <?php echo $_POST["nombre"]; ?>!</h1>
+    <p>Gracias por iniciar sesión en FUELOGGER.</p>
+    
+  <h1>Registro de Cargas</h1>
+  <table>
+    <tr>
+      <td>Día:</td>
+      <td><input type="text" id="dia" name="dia"></td>
+      </tr>
+    <tr>
+      <td>Kilómetros:</td>
+      <td><input type="text" id="kilometros" name="kilometros"></td>
+    </tr>
+    <tr>
+      <td>Precio:</td>
+      <td><input type="text" id="precio" name="precio"></td>
+    </tr>
+    <tr>
+      <td>Litros:</td>
+      <td><input type="text" id="litros" name="litros"></td>
+    </tr>
+    <tr>
+      <td>Tipo:</td>
+      <td><input type="text" id="tipo" name="tipo"></td>
+    </tr>
+    <tr>
+      <td>Total:</td>
+      <td><input type="text" id="total" name="total"></td>
+    </tr>
+    <tr>
+      <td>Km Viaje:</td>
+      <td><input type="text" id="km-viaje" name="km-viaje"></td>
+    </tr>
+  </table>
+  <button>Agregar</button>
+  <br>
+
+  <a href="index.html"><button>Cerrar Sesión</button></a>
+</body>
+</html>
