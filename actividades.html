@@ -8,24 +8,23 @@
     <link rel="stylesheet" href="styleactividades.css">
     
 </head>
-<script>
-    window.onload = function() {
-      var fechaActual = new Date();
-      var dia = fechaActual.getDate();
-      var mes = fechaActual.getMonth() + 1;
-      var anio = fechaActual.getFullYear();
-      var fecha = dia + '-' + mes + '-' + anio;
-      document.getElementById('dia').value = fecha;
-    };
-  </script>
   
 <body>
-    <h1>Bienvenido, <?php echo $_POST["nombre"]; ?>!</h1>
-    <p>Gracias por iniciar sesión en FUELOGGER.</p>
-    
-  <h1>Registro de Cargas</h1>
-  <table>
-    <tr>
+  <h1>Bienvenido</h1>
+  <script>
+    window.onload = function() {
+  var fechaActual = new Date();
+  var dia = fechaActual.getDate();
+  var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+  var mesNum = fechaActual.getMonth();
+  var mesNombre = meses[mesNum];
+  var anio = fechaActual.getFullYear();
+  var fecha = dia + ' de ' + mesNombre + ' de ' + anio;
+  document.getElementById('dia').value = fecha;
+};
+
+  </script>
+       <tr>
       <td>Día:</td>
       <td><input type="text" id="dia" name="dia"></td>
       </tr>
@@ -59,4 +58,9 @@
 
   <a href="index.html"><button>Cerrar Sesión</button></a>
 </body>
+<script>
+  const queryParams = new URLSearchParams(window.location.search);
+  const username = queryParams.get("username");
+  document.getElementById("username").textContent = username;
+</script>
 </html>

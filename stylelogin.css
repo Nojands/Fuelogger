@@ -30,22 +30,6 @@ h1 {
     border-radius: 4px;
     box-sizing: border-box;
   }
-  input.iniciarsesion {
-    background-color: #ff8800;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 0 #dab71d;
-  }
-  input.iniciarsesion:hover{
-    transform: translateY(4px);
-    box-shadow: 0 0 0 #0051a8;
-
-  }
   button {
     background-color: #007bff;
     color: #fff;
@@ -61,22 +45,6 @@ h1 {
   button:hover {
     transform: translateY(4px);
     box-shadow: 0 0 0 #0051a8;
-  }
-  .sesion {
-    background-color: #c28e00;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 0 #b1c500;
-  }
-  
-  .sesion:hover {
-    transform: translateY(4px);
-    box-shadow: 0 0 0 #ffc400;
   }
 
   
